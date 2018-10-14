@@ -294,7 +294,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
+  background: url('../images/wear_cuteximi.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
