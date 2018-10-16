@@ -17,6 +17,7 @@
   <style>
     a {
       text-decoration: none;
+      cursor: pointer;
     }
     #view-source {
       position: fixed;
@@ -56,18 +57,18 @@
     .ziyuan-card__icon--open {
     transform: rotate(-140deg);
     transform-origin: initial;
-}
-i.ziyuan-card__icon {
+  }
+  i.ziyuan-card__icon {
     color: #9e9e9e;
     position: absolute;
     right: -6px;
     top: -2px;
-}
-.ziyuan-card__label {
+  }
+  .ziyuan-card__label {
     clear: left;
     margin: 0;
     position: relative;
-}
+  }
     </style>
 </head>
 
@@ -76,183 +77,178 @@ i.ziyuan-card__icon {
     <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
       <div class="mdl-layout__header-row">
         <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="images/logo-colorful.png">
+          <img class="android-logo-image" src="images/logo-colorful.png">
         </span>
         <!-- Add spacer, to align navigation to the right in desktop -->
         <div class="android-header-spacer mdl-layout-spacer"></div>
         <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
           <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
+            <i class="material-icons">search</i>
+          </label>
           <div class="mdl-textfield__expandable-holder">
             <input placeholder="😯:还没有这个功能" class="mdl-textfield__input" type="text" id="search-field">
-            </div>
           </div>
-          <!-- 导航 -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">主页</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">资源</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://blog.cuteximi.com">博客</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">推荐站点</a>
-            </nav>
-          </div>
-          <!-- 主页logo -->
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/logo-colorful.png">
-          </span>
-          <!-- 更多 -->
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">技术</li>
-            <li class="mdl-menu__item">改变</li>
-            <li disabled class="mdl-menu__item">世界</li>
-            <li class="mdl-menu__item">和我</li>
-          </ul>
         </div>
-      </div>
-        <!-- 左侧隐藏的栏目 -->
-        <div class="android-drawer mdl-layout__drawer">
-          <span class="mdl-layout-title">
-            <img class="android-logo-image" src="images/logo-white.png">
-          </span>
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">主页</a>
-            <a class="mdl-navigation__link" href="">资源</a>
-            <a class="mdl-navigation__link" href="">博客</a>
-            <a class="mdl-navigation__link" href="">推荐站点</a>
+        <!-- 导航 -->
+        <div class="android-navigation-container">
+          <nav class="android-navigation mdl-navigation">
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://cuteximi.com">主页</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#">资源</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" target="_blank" href="http://blog.cuteximi.com">博客</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" target="_blank" href="http://wiki.cuteximi.com">笔记</a>
           </nav>
         </div>
-        <!-- 主要内容 -->
-        <!-- 展示中心主题，我热爱编程！！！ -->
-        <div class="android-content mdl-layout__content">
-          <a name="top"></a>
-          <div class="android-be-together-section mdl-typography--text-center">
-            <div class="logo-font android-slogan">不只会埋头敲代码</div>
-            <div class="logo-font android-sub-slogan">Programing | Reading | Enjoying | Fighting</div>
-            <div class="logo-font android-create-character">
-              <a><img src="images/天蝎座.png"> 思考，学习他人的优点</a>
-            </div>
-            <a href="#screens">
-              <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                <i class="material-icons">expand_more</i>
-              </button>
-            </a>
+        <!-- 主页logo -->
+        <span class="android-mobile-title mdl-layout-title">
+          <img class="android-logo-image" src="images/logo-colorful.png">
+        </span>
+        <!-- 更多 -->
+        <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+          <i class="material-icons">more_vert</i>
+        </button>
+        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+          <li class="mdl-menu__item">技术</li>
+          <li class="mdl-menu__item">改变</li>
+          <li disabled class="mdl-menu__item">世界</li>
+          <li class="mdl-menu__item">和我</li>
+        </ul>
+      </div>
+    </div>
+    <!-- 左侧隐藏的栏目 -->
+    <div class="android-drawer mdl-layout__drawer">
+      <span class="mdl-layout-title">
+        <img class="android-logo-image" src="images/logo-white.png">
+      </span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">主页</a>
+        <a class="mdl-navigation__link" href="">资源</a>
+        <a class="mdl-navigation__link" href="">博客</a>
+        <a class="mdl-navigation__link" href="">笔记</a>
+      </nav>
+    </div>
+    <!-- 主要内容 -->
+    <!-- 展示中心主题，我热爱编程！！！ -->
+    <div class="android-content mdl-layout__content">
+      <a name="top"></a>
+      <div class="android-be-together-section mdl-typography--text-center">
+        <div class="logo-font android-slogan">不只会埋头敲代码</div>
+        <div class="logo-font android-sub-slogan">Programing | Reading | Enjoying | Fighting</div>
+        <div class="logo-font android-create-character">
+          <a><img src="images/天蝎座.png"> 思考，学习他人的优点</a>
         </div>
+        <a href="#screens">
+          <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+            <i class="material-icons">expand_more</i>
+          </button>
+        </a>
+      </div>
 
-        <!-- 大板块01 -->
-        <div class="android-screen-section mdl-typography--text-center">
-          <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">培养一个积累性的第二技能</div>
-          <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">写作、投资、英语</div>
+      <!-- 大板块01 -->
+      <div class="android-screen-section mdl-typography--text-center">
+        <a name="screens"></a>
+        <div class="mdl-typography--display-1-color-contrast">培养一个积累性的第二技能</div>
+        <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">写作、投资、英语</div>
+        <p class="mdl-typography--font-light">
+          需要花大量的时间去打磨，历练。
+          <br>
+        </p>
+      </div>
+      <!-- 大板块02 -->
+      <div class="android-wear-section">
+        <div class="android-wear-band">
+          <div class="android-wear-band-text">
+            <div class="mdl-typography--display-2 mdl-typography--font-thin">不要觉得太晚</div>
+            <p class="mdl-typography--headline mdl-typography--font-thin">
+              Google was late to search.<br>
+              Facebook was late to social networking.<br>
+              Apple was late to the MP3 Player.<br>
+            </p>
+            <p>
+              <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="#">
+                It`s never to late.Just do it better.&nbsp;
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 大板块02结束 -->
+
+      <!-- 大板块03 -->
+      <div class="android-customized-section">
+        <div class="android-customized-section-text">
+          <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">道理我都懂，可是你会做吗？</div>
           <p class="mdl-typography--font-light">
-           需要花大量的时间去打磨，历练。
+            执行力很重要，圈子很重要。
             <br>
           </p>
         </div>
-        <!-- 大板块02 -->
-        <div class="android-wear-section">
-          <div class="android-wear-band">
-            <div class="android-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">不要觉得太晚</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                Google was late to search.<br>
-                Facebook was late to social networking.<br>
-                Apple was late to the MP3 Player.<br>
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="#">
-                It`s never to late.Just do it better.&nbsp;
-                </a>
-              </p>
+        <div class="android-customized-section-image"></div>
+      </div>
+      <!-- 大板块03结束 -->
+      <!-- 大板块04开始 -->
+      <div class="android-more-section">
+        <div class="ziyuan-card  mdc-ripple-surface search-skip js-object-card mdc-ripple-upgraded" style="--mdc-ripple-fg-size:144px; --mdc-ripple-fg-scale:1.93909;">
+          <a class="ziyuan-card__link js-analytics-click" href="#" rel="noopener" target="_blank">
+            <div class="ziyuan-card__image" style="background-image: url('images/circle.png');"></div>
+            <div class="ziyuan-card__copy">
+              <h2 class="ziyuan-card__title">科学上网</h2>
+              <p class="ziyuan-card__body">Google会给你想要的结果。</p>
             </div>
-          </div>
-        </div>
-        <!-- 大板块02结束 -->
-
-        <!-- 大板块03 -->
-        <div class="android-customized-section">
-          <div class="android-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">道理我都懂，可是你会做吗？</div>
-            <p class="mdl-typography--font-light">
-             执行力很重要，圈子很重要。
-              <br>
+            <p class="ziyuan-card__label">
+              推荐网站
+              <i class="ziyuan-card__icon ziyuan-card__icon--open material-icons">arrow_downward</i>
             </p>
-          </div>
-          <div class="android-customized-section-image"></div>
+          </a>
         </div>
-        <!-- 大板块03结束 -->
-        <!-- 大板块04开始 -->
-        <div class="android-more-section">
-
-          <aside class="ziyuan-card  mdc-ripple-surface search-skip js-object-card mdc-ripple-upgraded"
-              style="--mdc-ripple-fg-size:144px; --mdc-ripple-fg-scale:1.93909;">
-            <a class="ziyuan-card__link js-analytics-click" href="#" rel="noopener" target="_blank">
+        <div class="android-section-title mdl-typography--display-1-color-contrast"><i class="material-icons">folder</i>卡片-测试</div>
+        <!-- 展示卡片内容.... -->
+        <div class="android-card-container mdl-grid">
+          <div class="md-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="ziyuan-card  mdc-ripple-surface search-skip  mdc-ripple-upgraded" style="--mdc-ripple-fg-size:144px; --mdc-ripple-fg-scale:1.93909;">
+              <a class="ziyuan-card__link" href="#" target="_blank">
                 <div class="ziyuan-card__image" style="background-image: url('images/circle.png');"></div>
                 <div class="ziyuan-card__copy">
-                  <h2 class="ziyuan-card__title">科学上网</h2>
-                  <p class="ziyuan-card__body">百度只给你他们想给你的结果，而Google会给你想要的结果。</p>
+                  <h2 class="ziyuan-card__title">程序员</h2>
+                  <p class="ziyuan-card__body">免费在线中文书籍索引</p>
                 </div>
                 <p class="ziyuan-card__label">
                   推荐网站
                   <i class="ziyuan-card__icon ziyuan-card__icon--open material-icons">arrow_downward</i>
                 </p>
               </a>
-            </aside>
-          <div class="android-section-title mdl-typography--display-1-color-contrast"><i class="material-icons">folder</i>卡片-测试</div>
-          <!-- 展示卡片内容.... -->
-          <div class="android-card-container mdl-grid">
-            <div class=" mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-              <aside class="ziyuan-card  mdc-ripple-surface search-skip js-object-card mdc-ripple-upgraded"
-                  style="--mdc-ripple-fg-size:144px; --mdc-ripple-fg-scale:1.93909;">
-                <a class="ziyuan-card__link js-analytics-click" href="#" rel="noopener" target="_blank">
-                    <div class="ziyuan-card__image" style="background-image: url('images/circle.png');"></div>
-                    <div class="ziyuan-card__copy">
-                      <h2 class="ziyuan-card__title">科学上网</h2>
-                      <p class="ziyuan-card__body">百度只给你他们想给你的结果，而Google会给你想要的结果。</p>
-                    </div>
-                    <p class="ziyuan-card__label">
-                      推荐网站
-                      <i class="ziyuan-card__icon ziyuan-card__icon--open material-icons">arrow_downward</i>
-                    </p>
-                  </a>
-                </aside>
             </div>
-            <div class=" md-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-              <aside class="ziyuan-card  mdc-ripple-surface search-skip js-object-card mdc-ripple-upgraded"
-                  style="--mdc-ripple-fg-size:144px; --mdc-ripple-fg-scale:1.93909;">
-                <a class="ziyuan-card__link js-analytics-click" href="#" rel="noopener" target="_blank">
-                    <div class="ziyuan-card__image" style="background-image: url('images/circle.png');"></div>
-                    <div class="ziyuan-card__copy">
-                      <h2 class="ziyuan-card__title">科学上网</h2>
-                      <p class="ziyuan-card__body">百度只给你他们想给你的结果，而Google会给你想要的结果。</p>
-                    </div>
-                    <p class="ziyuan-card__label">
-                      推荐网站
-                      <i class="ziyuan-card__icon ziyuan-card__icon--open material-icons">arrow_downward</i>
-                    </p>
-                  </a>
-                </aside>
+          </div>
+          <div class=" md-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="ziyuan-card  mdc-ripple-surface search-skip js-object-card mdc-ripple-upgraded" style="--mdc-ripple-fg-size:144px; --mdc-ripple-fg-scale:1.93909;">
+              <a class="ziyuan-card__link js-analytics-click" href="#" rel="noopener" target="_blank">
+                <div class="ziyuan-card__image" style="background-image: url('images/circle.png');"></div>
+                <div class="ziyuan-card__copy">
+                  <h2 class="ziyuan-card__title">科学上网</h2>
+                  <p class="ziyuan-card__body">Google会给你想要的结果。</p>
+                </div>
+                <p class="ziyuan-card__label">
+                  推荐网站
+                  <i class="ziyuan-card__icon ziyuan-card__icon--open material-icons">arrow_downward</i>
+                </p>
+              </a>
             </div>
-            <div class=" md-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-              <aside class="ziyuan-card  mdc-ripple-surface search-skip js-object-card mdc-ripple-upgraded"
-                  style="--mdc-ripple-fg-size:144px; --mdc-ripple-fg-scale:1.93909;">
-                <a class="ziyuan-card__link js-analytics-click" href="#" rel="noopener" target="_blank">
-                    <div class="ziyuan-card__image" style="background-image: url('images/circle.png');"></div>
-                    <div class="ziyuan-card__copy">
-                      <h2 class="ziyuan-card__title">科学上网</h2>
-                      <p class="ziyuan-card__body">百度只给你他们想给你的结果，而Google会给你想要的结果。</p>
-                    </div>
-                    <p class="ziyuan-card__label">
-                      推荐网站
-                      <i class="ziyuan-card__icon ziyuan-card__icon--open material-icons">arrow_downward</i>
-                    </p>
-                  </a>
-                </aside>
+          </div>
+          <div class=" md-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="ziyuan-card  mdc-ripple-surface search-skip js-object-card mdc-ripple-upgraded" style="--mdc-ripple-fg-size:144px; --mdc-ripple-fg-scale:1.93909;">
+              <a class="ziyuan-card__link js-analytics-click" href="#" rel="noopener" target="_blank">
+                <div class="ziyuan-card__image" style="background-image: url('images/circle.png');"></div>
+                <div class="ziyuan-card__copy">
+                  <h2 class="ziyuan-card__title">科学上网</h2>
+                  <p class="ziyuan-card__body">Google会给你想要的结果。</p>
+                </div>
+                <p class="ziyuan-card__label">
+                  推荐网站
+                  <i class="ziyuan-card__icon ziyuan-card__icon--open material-icons">arrow_downward</i>
+                </p>
+              </a>
             </div>
-            <!-- <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+          </div>
+          <!-- <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
                 <img src="images/more-from-4.png">
               </div>
@@ -269,74 +265,75 @@ i.ziyuan-card__icon {
                  </a>
                 </div>
             </div> -->
-          </div>
         </div>
-        <!-- 打板块04结束 -->
+      </div>
+      <!-- 打板块04结束 -->
 
-        <!-- <div class="chongdian">
+      <!-- <div class="chongdian">
           <img src="images/shoujichongdian.png" alt="记得手机充电哦！">
         </div> -->
 
-        <!-- 页脚开始 -->
-        <footer class="android-footer mdl-mega-footer">
-            <!-- 第一行 -->
-            <div class="mdl-mega-footer--top-section">
-              <div class="mdl-mega-footer--left-section">
-                <a href="#">
-                <img id="wechat" src="images/wechat.svg" alt="微信联系我">
-                </a>
-                &nbsp;
-                <a href="#"> <img id="qq" src="images/qq_1.svg" alt="QQ联系我"></a>
+      <!-- 页脚开始 -->
+      <footer class="android-footer mdl-mega-footer">
+        <!-- 第一行 -->
+        <div class="mdl-mega-footer--top-section">
+          <div class="mdl-mega-footer--left-section">
+            <a href="#">
+              <img id="wechat" src="images/wechat.svg" alt="微信联系我">
+            </a>
+            &nbsp;
+            <a href="#"> <img id="qq" src="images/qq_1.svg" alt="QQ联系我"></a>
 
-                &nbsp;
-                <a href="https://github.com/aikuyun" target="_blank"><img id="github" src="images/GitHub.svg" alt="github联系我"></a>
-              </div>
-              <div class="mdl-mega-footer--right-section">
-                <a class="mdl-typography--font-light" href="#top">
-                  回到顶部
-                    <i class="material-icons">expand_less</i>
-                  </a>
-              </div>
-            </div>
-            <!-- 第二行 -->
-            <div class="mdl-mega-footer--middle-section">
-              <p class="mdl-typography--font-light">2016 - 2018 ©️ cuteximi.com</p>
-              <p class="mdl-typography--font-light">认真搞定一切</p>
-            </div>
-            <!-- 第三行 -->
-            <div class="mdl-mega-footer--bottom-section">
-              <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-                联系我
-                <i class="material-icons">arrow_drop_up</i>
-              </a>
-              <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-                <li class="mdl-menu__item">wechat</li>
-                <li class="mdl-menu__item">email</li>
-                <li class="mdl-menu__item">QQ</li>
-              </ul>
-              <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-                友链
-                <i class="material-icons">arrow_drop_up</i>
-              </a>
-              <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-                <li class="mdl-menu__item">这</li>
-                <li class="mdl-menu__item">里</li>
-                <li class="mdl-menu__item">还</li>
-                <li class="mdl-menu__item">没有</li>
-              </ul>
-              <a class="android-link mdl-typography--font-light" target="_blank" href="http://blog.cuteximi.com">Blog</a>
-            </div>
-          </footer>
-        <!-- 页脚结束 -->
-      </div>
-      <!-- 主要内容结束 -->
+            &nbsp;
+            <a href="https://github.com/aikuyun" target="_blank"><img id="github" src="images/GitHub.svg" alt="github联系我"></a>
+          </div>
+          <div class="mdl-mega-footer--right-section">
+            <a class="mdl-typography--font-light" href="#top">
+              回到顶部
+              <i class="material-icons">expand_less</i>
+            </a>
+          </div>
+        </div>
+        <!-- 第二行 -->
+        <div class="mdl-mega-footer--middle-section">
+          <p class="mdl-typography--font-light">2016 - 2018 ©️ cuteximi.com</p>
+          <p class="mdl-typography--font-light">认真搞定一切</p>
+        </div>
+        <!-- 第三行 -->
+        <div class="mdl-mega-footer--bottom-section">
+          <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+            联系我
+            <i class="material-icons">arrow_drop_up</i>
+          </a>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+            <li class="mdl-menu__item">wechat</li>
+            <li class="mdl-menu__item">email</li>
+            <li class="mdl-menu__item">QQ</li>
+          </ul>
+          <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+            友链
+            <i class="material-icons">arrow_drop_up</i>
+          </a>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+            <li class="mdl-menu__item">这</li>
+            <li class="mdl-menu__item">里</li>
+            <li class="mdl-menu__item">还</li>
+            <li class="mdl-menu__item">没有</li>
+          </ul>
+          <a class="android-link mdl-typography--font-light" target="_blank" href="http://blog.cuteximi.com">Blog</a>
+        </div>
+      </footer>
+      <!-- 页脚结束 -->
     </div>
-    <!-- 结束 -->
-    <a href="https://github.com/aikuyun" target="_blank" id="view-source"><!-- Icon badge -->
-      <span class="mdl-badge" data-badge="♥">Github
-      </span>
-    </a>
-    <script src="./js/material.min.js"></script>
+    <!-- 主要内容结束 -->
+  </div>
+  <!-- 结束 -->
+  <a href="https://github.com/aikuyun" target="_blank" id="view-source">
+    <!-- Icon badge -->
+    <span class="mdl-badge" data-badge="♥">Github
+    </span>
+  </a>
+  <script src="./js/material.min.js"></script>
 </body>
 
 </html>
