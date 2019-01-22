@@ -10,6 +10,8 @@
 	vertical-align:top;
 	width:240px;
 	z-index:1;
+	float: left;
+	margin-left: 16px;
 }
 .ziyuan-card {
     box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
@@ -56,9 +58,9 @@
 }
 
 
-.ziyuan-card+.ziyuan-card {
+/* .ziyuan-card+.ziyuan-card {
 	margin-left:16px
-}
+} */
 
 .ziyuan-card__link {
 	color:inherit;
