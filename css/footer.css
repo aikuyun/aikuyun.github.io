@@ -1,0 +1,20 @@
+/*
+页脚
+ */
+.backTop img {
+  width: 90px;
+}
+
+.backTop.visble {
+  display: block;
+}
+
+.backTop {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  margin-left: 590px;
+  z-index: 300;
+  cursor: pointer;
+  display: none;
+}
