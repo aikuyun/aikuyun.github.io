@@ -1,4 +1,12 @@
 (() => {
+  const fallbackImage = document.querySelector("[data-fallback-src]");
+
+  if (fallbackImage) {
+    fallbackImage.addEventListener("error", () => {
+      fallbackImage.src = fallbackImage.dataset.fallbackSrc;
+    }, { once: true });
+  }
+
   const typingText = document.querySelector("[data-typing]");
 
   if (!typingText) return;
